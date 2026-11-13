@@ -1,0 +1,16 @@
+# Python 3.11+; bounded dependency ranges for CPU-only experimentation.
+# Exact model-building library versions are recorded in each RUL output manifest.
+numpy>=1.26,<3
+pandas>=2.0,<4
+scipy>=1.10,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.7,<4
+openpyxl>=3.1,<4
+pyarrow>=14,<30
+xgboost>=2.0,<4
+torch>=2.2,<3
+reportlab>=4.0,<6
+pymupdf>=1.24,<3
+pillow>=10,<13
+# Optional interactive notebook front end
+jupyterlab>=4,<5

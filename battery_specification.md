@@ -1,0 +1,5 @@
+# Provisional configuration and missing specification
+
+No controlled manufacturer datasheet, instrument calibration record or cycling protocol was supplied with this submission. `battery_thresholds.json` contains processing assumptions, not verified specifications. In particular, 2.5 Ah is the configured C-rate divisor; it is not established here as manufacturer nominal capacity. Voltage/current limits, counter semantics and cutoffs require verification against controlled source documents. Do not use these settings as certified ratings or a basis for safety decisions.
+
+The RUL endpoint uses 80% of measured cycle-2 high-current capacity, not nominal capacity. If 2.5 Ah were hypothetically nominal, 80% would be 2.0 Ah: both first complete cycles (1.511447 and 1.687755 Ah) are already below it. Their first crossing therefore predates or coincides with the first complete observation and cannot be dated from complete-cycle data. This hypothetical comparison is not a verified nominal-capacity RUL.
